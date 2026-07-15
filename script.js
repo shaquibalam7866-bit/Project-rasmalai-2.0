@@ -53,3 +53,16 @@ musicBtn.addEventListener("click", () => {
         musicBtn.innerHTML = "🎵 Play Music";
     }
 });
+// Full Screen Gallery
+
+const images = document.querySelectorAll(".gallery img");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        if (img.requestFullscreen) {
+            img.requestFullscreen();
+        } else if (img.webkitRequestFullscreen) {
+            img.webkitRequestFullscreen();
+        }
+    });
+});
