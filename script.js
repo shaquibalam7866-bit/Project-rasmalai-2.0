@@ -66,22 +66,3 @@ images.forEach(img => {
         }
     });
 });
-// Letter Typing Animation
-const letter = document.querySelector(".letter-box p");
-
-if (letter) {
-  const text = letter.innerHTML;
-  letter.innerHTML = "";
-
-  let i = 0;
-
-  function typeLetter() {
-    if (i < text.length) {
-      letter.innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeLetter, 35);
-    }
-  }
-
-  window.addEventListener("load", typeLetter);
-}
