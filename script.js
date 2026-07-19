@@ -66,3 +66,26 @@ images.forEach(img => {
         }
     });
 });
+/* Letter Section */
+.letter{
+  padding:40px 20px;
+  text-align:center;
+}
+
+.letter h2{
+  color:#ff4081;
+  margin-bottom:20px;
+}
+
+.letter-box{
+  max-width:700px;
+  margin:auto;
+  background:rgba(255,255,255,0.9);
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  font-size:18px;
+  line-height:1.8;
+  color:#444;
+  white-space:pre-line;
+}
