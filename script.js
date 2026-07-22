@@ -4,6 +4,7 @@ const giftBox = document.getElementById("giftBox");
 const giftText = document.getElementById("giftText");
 
 startBtn.addEventListener("click", function () {
+    document.getElementById("bgMusic").play();
     startBtn.style.display = "none";
     welcomeMessage.style.display = "block";
 
