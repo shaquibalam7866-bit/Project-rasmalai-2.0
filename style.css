@@ -165,3 +165,54 @@ h1{
   color:#444;
   white-space:pre-line;
 }
+#lockScreen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #ff9ec4, #ffd6e8, #fff0f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.lockBox {
+  width: 85%;
+  max-width: 350px;
+  padding: 30px;
+  background: white;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.lockIcon {
+  font-size: 55px;
+}
+
+.lockBox h2 {
+  color: #ff4f91;
+}
+
+.lockBox input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.lockBox button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  background: #ff4f91;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#wrongPassword {
+  color: red;
+  font-size: 14px;
+    }
