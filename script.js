@@ -68,17 +68,36 @@ images.forEach(img => {
     });
 });
 <script>
-const correctPassword = "miss_afsha_sheikh_11";
+// =========================
+// PASSWORD LOCK
+// =========================
+
+const correctPassword = "afsha sheikh";
 
 function unlockWebsite() {
-  const enteredPassword =
-    document.getElementById("passwordInput").value;
+    const enteredPassword =
+        document.getElementById("passwordInput").value.trim();
 
-  if (enteredPassword === correctPassword) {
-    document.getElementById("lockScreen").style.display = "none";
-  } else {
-    document.getElementById("wrongPassword").innerText =
-      "Wrong password 😅 Try again!";
-  }
+    const wrongPassword =
+        document.getElementById("wrongPassword");
+
+    if (enteredPassword === correctPassword) {
+
+        const lockScreen =
+            document.getElementById("lockScreen");
+
+        lockScreen.style.transition = "opacity 0.8s ease";
+        lockScreen.style.opacity = "0";
+
+        setTimeout(() => {
+            lockScreen.style.display = "none";
+        }, 800);
+
+    } else {
+
+        wrongPassword.innerText =
+            "Wrong password 😅 Try again!";
+
+    }
 }
 </script>
