@@ -66,38 +66,5 @@ images.forEach(img => {
             img.webkitRequestFullscreen();
         }
     });
-});
-<script>
-// =========================
-// PASSWORD LOCK
-// =========================
-
-const correctPassword = "afsha sheikh";
-
-function unlockWebsite() {
-    const enteredPassword =
-        document.getElementById("passwordInput").value.trim();
-
-    const wrongPassword =
-        document.getElementById("wrongPassword");
-
-    if (enteredPassword === correctPassword) {
-
-        const lockScreen =
-            document.getElementById("lockScreen");
-
-        lockScreen.style.transition = "opacity 0.8s ease";
-        lockScreen.style.opacity = "0";
-
-        setTimeout(() => {
-            lockScreen.style.display = "none";
-        }, 800);
-
-    } else {
-
-        wrongPassword.innerText =
-            "Wrong password 😅 Try again!";
-
-    }
-}
+})
 </script>
